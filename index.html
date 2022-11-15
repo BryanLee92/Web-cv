@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/bb0f3d7e81.js" crossorigin="anonymous"></script>
+    <title>Bryan's Personal Portfolio</title>
+    <link rel="icon" href="fa-duotone fa-user-secret" type="image/x-icon">
+    <link rel="stylesheet" href="./portfolio.css">
+</head>
+<body>
+    <!-----------------Header----------------->
+    <div id="Header">
+        <div class='container'>
+          <nav>
+            <img src="https://i.imgur.com/oEkOfoj.png" class="Logo" alt="Logo"/>
+            <ul id="sideMenu">
+              <li>
+              <a href="#Header">Home</a>
+              </li>
+              <li>
+              <a href="#About">About Me</a>
+              </li>
+              <li>
+                <a href="#knowledge">Experience</a>
+                </li>
+              <li>
+              <a href="#projects">Projects</a>
+              </li>
+              <li>
+              <a href="#contacts">Contact</a>
+              </li>
+              <i class="fas fa-times" onClick="closeMenu()"></i>
+            </ul> 
+            <i class="fas fa-bars" onClick="openMenu()"></i>
+          </nav>
+          <!-----------------Greetings----------------->
+          <div class="Home-text">
+            <p class='Home-p'>Full Stack Developer</p>
+            <h1>Hi, I'm <span>Bryan Lee</span><br />From Malaysia</h1>
+          </div>
+        </div>
+    </div>
+    <!-----------------About Me----------------->
+    <div id='About'>
+        <div class='container'>
+            <div class='row'>
+                <div class='About-col-1'>
+                    <img src="https://www.computersciencedegreehub.com/wp-content/uploads/2016/02/what-is-coding-1024x683.jpg" >
+                </div>
+                <div class='About-col-2'>
+                    <h1 class='sub-title'>About Me</h1>
+                    <p> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Hello! I'm Bryan, a full stack developer that great at making Beautiful Websites. Hardworking and dedicated in achieving Greatness. Has Creative ideas and attention to Details.</p>
+                    <br />
+                    <hr/>
+
+                    <div class='tab-titles'>
+                        <p class="tab-links active-link" onClick="openTab('skills')">Skills</p>
+                        <p class="tab-links" onClick="openTab('experience')">Experience</p>
+                        <p class="tab-links" onClick="openTab('education')">Education</p>
+                    </div>
+
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>Web Development</span><br />Web app Development</li>
+                            <li><span>UI/UX</span><br />Designing Web interfaces</li>
+                        </ul>
+                    </div>
+
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li><span>August 2022 - November 2022</span><br />Full Stack Developer at General Assembly Malaysia</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>2022</span><br />General Assembly Malaysia</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+      <!-----------------Experience----------------->
+    <div id="knowledge">
+        <h1 class='sub-title'>My Experiences</h1>
+        <div class="container experience_container">
+            <div class="experience_frontend">
+                <h3>FrontEnd Development</h3>
+                <div class="experience_content">
+                    <article class="experience_details">
+                        <div>
+                            <i class="fa-sharp fa-solid fa-code"></i>
+                            <h4>HTML</h4>
+                            <small class="article_text">Experienced</small>
+                        </div>
+                    </article>
+                    <article class="experience_details">
+                        <div>
+                            <i class="fa-sharp fa-solid fa-code"></i>
+                            <h4>CSS</h4>
+                            <small class="article_text">Intermediete</small>
+                        </div>
+                    </article>
+                    <article class="experience_details">
+                        <div>
+                            <i class="fa-sharp fa-solid fa-code"></i>
+                            <h4>Javascript</h4>
+                            <small class="article_text">Intermediete</small>
+                        </div>
+                    </article>
+                    <article class="experience_details">
+                        <div>
+                            <i class="fa-sharp fa-solid fa-code"></i>
+                            <h4>React</h4>
+                            <small class="article_text">Intermediete</small>
+                        </div>
+                    </article>
+                    <article class="experience_details">
+                        <div>
+                            <i class="fa-sharp fa-solid fa-code"></i>
+                            <h4>Bootstrap</h4>
+                            <small class="article_text">Experienced</small>
+                        </div>                      
+                    </article>
+                </div>
+            </div>
+
+            <div class="experience_backend">
+                <h3>BackEnd Development</h3>
+                <div class="experience_content">
+                    <article class="experience_details">
+                        <div>
+                            <i class="fa-sharp fa-solid fa-code"></i>
+                            <h4>Node JS</h4>
+                            <small class="article_text">Experienced</small>
+                        </div>
+                    </article>
+                    <article class="experience_details">
+                        <div>
+                            <i class="fa-sharp fa-solid fa-code"></i>
+                            <h4>MongoDB</h4>
+                            <small class="article_text">Experience</small>
+                        </div>
+                    </article>
+                    <article class="experience_details">
+                        <div>
+                            <i class="fa-sharp fa-solid fa-code"></i>
+                            <h4>My SQL</h4>
+                            <small class="article_text">Intermediete</small>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-----------------Projects----------------->
+    <div id='projects'>
+        <div class='container'>
+          <h1 class='sub-title'>Projects</h1>
+            <div class="project-list">
+              <div>
+                <i class="fa-sharp fa-solid fa-link"></i>
+                  <h1>Tic.Tac.Toe Static Web</h1>
+                  <p>Project 1</p>
+                    <a class="git" href="https://github.com/BryanLee92/SEI_Project01" target="_blank">CODE HERE!</a>
+                    <a class="demo" href="https://bryanlee92.github.io/SEI_Project01/" target="_blank">LIVE DEMO!</a>
+              </div>
+              <div>
+                <i class="fa-sharp fa-solid fa-link"></i>
+                  <h1>Food Application</h1>
+                  <p>Project 2</p>
+                    <a class="git" href="https://github.com/BryanLee92/SEI_Project02" target="_blank">CODE HERE!</a>
+                    <a class="demo" href="https://young-peak-67257.herokuapp.com/" target="_blank">LIVE DEMO!</a>
+              </div>
+              <div>
+                <i class="fa-sharp fa-solid fa-link"></i>
+                <h1>Music Application</h1>
+                <p>Project 3</p>
+                    <a class="git" href="#" target="_blank">CODE HERE!</a>
+                    <a class="demo" href="#" target="_blank">LIVE DEMO!</a>          
+              </div>
+            </div>
+        </div>
+    </div>
+     <!-----------------Contact Me----------------->
+     <div id="contacts">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact Me</h1>
+                    <p><i class="fa-sharp fa-solid fa-envelope"></i> lwm.bryan92@gmail.com</p>
+                    <p><i class="fa-solid fa-phone"></i> 012-9217232</p>
+                </div>
+
+                <div class="contact-right">
+                    <a href="mailto:code.bryan92@gmail.com" class="btn btn2">Send email</a>
+                    <a href="" target="_blank" download class="btn btn2">Download CV</a>
+                    <div class="social-icons">
+                        <a href="https://github.com/BryanLee92" target="_blank"><i class="fa-brands fa-github"></i></a>
+                        <a href="https://www.linkedin.com/in/bryan-lee-56761b157" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-----------------Footer----------------->
+    <div class="copyright">
+        <p><i class="fa-solid fa-user-astronaut"></i>  Copyright Ⓒ Bryan Lee.</p>
+    </div>
+</body>
+<script src="portfolio.js"></script>
+</html>

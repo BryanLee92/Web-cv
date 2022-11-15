@@ -1,0 +1,465 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat', sans-serif;
+    box-sizing: border-box;
+}
+body{
+    background: linear-gradient( to right, black , rgb(190, 190, 190));
+    color: white;
+}
+/* ---------------Header---------------     */
+#Header {
+    width: 100%;
+    height: 100vh;
+    background-image: url("https://wallpaperaccess.com/full/2153289.jpg");
+    background-size: cover;
+    background-position: center;
+}
+.container {
+    padding: 10px 10%;
+}
+nav {
+    display: flex;
+    align-items:center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    height: 100%;
+}
+nav ul li{
+    display: inline-block;
+    list-style: none;
+    margin: 10px 20px;
+}
+nav ul li a{
+    color:rgb(160, 160, 160);
+    text-decoration: none;
+    font-size: 25px;
+    position: relative;
+    transition: 0.5s;
+}
+nav ul li a:hover{
+    color: #ff004f;
+    font-size: 30px;
+}
+nav ul li a::after{
+    content: '';
+    width: 0;
+    height: 3px;
+    background: rgb(255, 251, 1);
+    position: absolute;
+    left: 0;
+    bottom: -1px;
+    transition: 0.5s;
+}
+nav ul li a:hover::after{
+    width: 100%;
+}
+nav .fas{
+    display: none;
+}
+.Logo{
+    width: 180px;
+    height: 180px;
+}
+/* ---------------Greetings---------------     */
+.Home-text{
+    color: white;
+    padding: 10px 10%;
+    margin-top: 10%;
+    font-size: 30px;
+}
+.Home-text .Home-p{
+    color: #ff004f;
+}
+.Home-text h1{
+    font-size: 60px;
+    margin-top: 20px;
+}
+.Home-text h1 span{
+    color: yellow;
+}
+/* ---------------About Me---------------     */
+#About {
+    padding: 80px 0;
+    color: white;
+}
+.row {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap:wrap;
+}
+.About-col-1{
+    flex-basis: 35%;
+}
+.About-col-1 img{
+    width: 100%;
+    border-radius: 15px;
+    box-shadow: -47px 20px 24px 0px rgba(0,0,0,1);
+}
+.About-col-2{
+    flex-basis: 60%;
+
+}
+.sub-title{
+    font-size: 60px;
+    font-weight: 600;
+    color:#ff004f
+}
+.tab-titles{
+    display: flex;
+    margin: 20px 0 40px;
+}
+.tab-links{
+    margin-right: 50px;
+    font-size: 18px;
+    font-weight: 500;
+    cursor: pointer;
+    position: relative;
+    color: rgb(255, 255, 255);
+}
+.tab-links.active-link{
+    color: #ff004f;
+}
+.tab-links::after{
+    content: '';
+    width: 0;
+    height: 3px;
+    background: yellow;
+    position: absolute;
+    left: 0;
+    bottom: -8px;
+    transition: 0.5s ease-in-out;
+}
+.tab-links.active-link::after{
+    width:50%;
+}
+.tab-contents ul li{
+    list-style:none;
+    margin: 10px 0;
+}
+.tab-contents ul li span{
+    color: #ff004f;
+    font-size: 20px;
+    font-weight: 500;
+}
+.tab-contents{
+    display: none;
+}
+.tab-contents.active-tab{
+    display: block;
+}
+/* ---------------Experience---------------     */
+#knowledge{
+    padding: 5px 0;
+}
+#knowledge > h1{
+    padding: 10px 10%;
+}
+.experience_container{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+}
+.experience_container > div{
+    background:rgba(0, 0, 0, 0.3);
+    border-radius: 20px;
+    padding: 2.4rem 5rem;
+    box-shadow: -20px -1px 15px 0px rgba(0,0,0,1);
+}
+.experience_container > div:hover{
+    border: 1px solid white;
+    box-shadow: 0px 0px 50px 0px white;
+    background-image: url("https://mir-s3-cdn-cf.behance.net/project_modules/fs/8407f6121069677.610674e30fe0b.gif");
+    background-size: cover;
+    background-repeat: repeat;
+}
+.experience_container > div h3{
+    text-align: center;
+    margin-bottom: 2rem;
+    color:#ff004f;
+}
+.experience_content{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    row-gap: 2rem;
+}
+.experience_details{
+    display:flex;
+    gap: 1rem;
+}
+/* ---------------Projects---------------     */
+#projects{
+    padding: 30px 0;
+}
+.project-list{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-gap: 40px;
+    margin-top: 50px;
+}
+.project-list div{
+    background: #313131;
+    padding: 40px;
+    font-size: 13px;
+    font-weight: 300;
+    border-radius: 15px;
+    transition: background 0.5s, transform 0.5s;
+    box-shadow: -23px -1px 15px 0px rgba(0,0,0,1);
+
+}
+.project-list div h1{
+    font-size: 30px;
+    font-weight: 500;
+    margin-bottom: 10px;
+    color: yellow
+}
+.project-list div a{
+    text-decoration: none;
+    color: white;
+    font-size: 12px;
+    margin-top: flex;
+    margin-right: 50px;
+    transition: 0.4s;
+}
+.project-list div:hover{
+    border: 1px solid white;
+    box-shadow: 0px 0px 50px 0px white;
+    background-color: #ff004f;
+    transform: translateY(-10px);
+}
+.project-list div a:hover{
+    font-size: 15px;
+    color: yellow;
+}
+/* ---------------Contact Me---------------     */
+#contact{
+    padding: 50px 0;
+}
+.contact-left{
+    flex-basis: 35%;
+}
+.contact-right{
+    flex-basis: 60%;
+}
+.contact-left p{
+    margin-top: 30px;
+}
+.contact-left p i{
+    margin-right: 15px;
+    font-size: 20px;
+    color:#ff004f;
+}
+.social-icons{
+    margin-top: 30px;
+}
+.social-icons a{
+    text-decoration: none;
+    font-size: 30px;
+    margin-right: 15px;
+    color: white;
+    display:inline-block;
+    transition: transform 0.5s;
+}
+.social-icons a:hover{
+    color: yellow;
+    transform: translateY(-5px);
+}
+.btn{
+    background:rgba(0, 0, 0, 0.3);
+    border: solid 1px #ff004f;
+    color: white;
+    border-radius: 10px;
+    text-decoration: none;
+    padding: 20px 30px;
+    transition: 0.5s;
+}
+.btn:hover{
+    background:#ff004f;
+    border: 1px solid white;
+    box-shadow: 0px 0px 50px 0px white;
+}
+.btn.btn2{
+    margin-top: 25px;
+    margin-left: 25px;
+    display:inline-block; 
+}
+.contact-right form{
+   width: 100%;
+}
+form input, form textarea{
+    width:100%;
+    border: 0;
+    outline: none;
+    background: #313131;
+    padding: 15px;
+    margin: 15px 0;
+    color: white;
+    font-size: 18px;
+    border-radius: 6px;
+}
+form .btn2{
+    font-size: 18px;
+    margin-top: 20px;
+    cursor: pointer;
+}
+/* ---------------Footer---------------     */
+.copyright{
+    width: 100;
+    text-align: center;
+    padding: 25px 0;
+    background:rgba(0, 0, 0, 0.3);
+    font-weight: 300;
+    margin-top: 20px;
+}
+.copyright p i{
+    color:#ff004f;
+}
+/* ------MEDIA QUERIES(MEDIUM)------ */
+@media screen and (max-width: 1024px) {
+    /* ---------------Header---------------     */
+    nav ul li a{
+        color:white;
+        font-size: 20px;
+    }
+    nav ul li a:hover{
+        font-size: 20px;
+    }
+    nav .fas{
+        display: block;
+        font-size: 30px;
+        color: yellow;
+    }
+    nav ul{
+        background :#313131;
+        position: fixed;
+        top: 0;
+        right: -200px;
+        width: 200px;
+        height: 100vh;
+        padding-top: 50px;
+        z-index: 2;
+        transition: right 0.5s;
+    }
+    nav ul li{
+        display: block;
+        margin:25px;
+    }
+    nav ul .fas{
+        position: absolute;
+        top: 25px;
+        left: 25px;
+        cursor: pointer;
+        color: #ff004f;
+    }
+    /* ---------------Greetings---------------     */
+    .Home-text{
+        margin-top: 50%;
+        font-size: 30px;
+    }
+    .Home-text h1{
+        font-size: 55px;
+    }
+    /* ---------------Experience---------------     */
+    #knowledge{
+        text-align: center;
+    }
+    .experience_container{
+        grid-template-columns: 1fr;
+    }
+    .experience_container > div{
+        width: 80%;
+        padding: 2rem;
+        margin: 0 auto;
+    }
+    .experience_content{
+        padding: 1rem;
+    }
+}
+
+
+/* ------MEDIA QUERIES(SMALL)------ */
+@media screen and (max-width: 600px) {
+     /* ---------------Header---------------     */
+    nav ul li a{
+        color:white;
+        font-size: 20px;
+    }
+    nav ul li a:hover{
+        font-size: 20px;
+    }
+    nav .fas{
+        display: block;
+        font-size: 25px;
+        color: yellow;
+    }
+    nav ul{
+        background :#313131;
+        position: fixed;
+        top: 0;
+        right: -200px;
+        width: 200px;
+        height: 100vh;
+        padding-top: 50px;
+        z-index: 2;
+        transition: right 0.5s;
+    }
+    nav ul li{
+        display: block;
+        margin:25px;
+    }
+    nav ul .fas{
+        position: absolute;
+        top: 25px;
+        left: 25px;
+        cursor: pointer;
+        color: #ff004f;
+    }
+    /* ---------------Greetings---------------     */
+    .Home-text{
+        margin-top: 70%;
+        font-size: 16px;
+    }
+    .Home-text h1{
+        font-size: 25px;
+    }
+     /* ---------------About Me---------------     */
+    .sub-title{
+        font-size: 40px;
+    }
+    .About-col-1{
+        display: none;
+    }
+    .About-col-2{
+        flex-basis: 100%;
+        font-size: 13px;
+    }
+    .tab-links {
+        font-size: 15px;
+        margin-right: 20px;
+    }
+    /* ---------------Experience---------------     */
+    .experience_container{
+        gap: 1rem;
+    }
+    .experience_container > div{
+       width: 100%;
+       padding: 2rem 1rem;
+    }
+    /* ---------------Projects---------------     */
+    .project-list div a{
+        font-size: 10px;
+        margin-top: flex;
+        margin-right: 20px;
+    }
+    /* ---------------Contact Me---------------     */
+    .contact-left, .contact-right{
+        flex-basis: 100%;
+        text-align: center;
+    }
+    /* ---------------Footer---------------     */
+    .copyright{
+        font-size: 14px;
+    }
+}
