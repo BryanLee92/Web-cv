@@ -290,6 +290,11 @@ nav .fas{
 .contact-right{
     flex-basis: 60%;
 }
+.contact-right .contact-align{
+    margin-top: 25px;
+    margin-left: 25px;
+    display:inline-block;
+}
 .contact-left p{
     margin-top: 30px;
 }
@@ -332,25 +337,7 @@ nav .fas{
     margin-left: 25px;
     display:inline-block; 
 }
-.contact-right form{
-   width: 100%;
-}
-form input, form textarea{
-    width:100%;
-    border: 0;
-    outline: none;
-    background: #313131;
-    padding: 15px;
-    margin: 15px 0;
-    color: white;
-    font-size: 18px;
-    border-radius: 6px;
-}
-form .btn2{
-    font-size: 18px;
-    margin-top: 20px;
-    cursor: pointer;
-}
+
 /* ---------------Footer---------------     */
 .copyright{
     width: 100;
@@ -442,7 +429,6 @@ form .btn2{
         flex-basis: 50%;
     }
 }
-
 
 /* ------MEDIA QUERIES(SMALL)------ */
 @media screen and (max-width: 600px) {
