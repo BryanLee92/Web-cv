@@ -243,6 +243,16 @@ nav .fas{
     font-weight: 500;
     margin-bottom: 10px;
 }
+.project-list div p{
+    background: #313131;
+    display: inline-block;
+    color: white;
+    margin: 5px;
+    padding: 10px;
+    font-weight: 300;
+    border-radius: 15px;
+    border: 1px yellow solid;
+}
 .project-list div a{
     text-decoration: none;
     color: white;
